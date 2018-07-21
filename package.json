@@ -1,0 +1,48 @@
+{
+  "name": "static-html-site-boilerplate",
+  "version": "1.0.1",
+  "description": "Modern tooling for old-school static webpage development",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start:dev": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "webpack --config webpack.prod.js && http-server ./dist -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickzhao/static-html-webpack-boilerplate.git"
+  },
+  "author": "erick zhao",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.7",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "glob": "^7.1.2",
+    "html-webpack-plugin": "^2.30.1",
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^2.0.8",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3",
+    "webpack-merge": "^4.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
