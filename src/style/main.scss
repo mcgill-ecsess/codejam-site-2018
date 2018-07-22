@@ -1,9 +1,30 @@
 body {
-  font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
+  background-color: #00052F;
 }
 
-img {
-  display: block;
-  margin: 50px auto;
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+
+  em {
+    font-weight: 300;
+  }
+}
+
+p {
+  font-family: 'Source Code Pro';
+  color: white;
+  text-transform: uppercase;
+}
+
+div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
