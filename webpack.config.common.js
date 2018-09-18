@@ -1,18 +1,14 @@
-const path = require('path');
 const glob = require('glob');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-
-const getNameFromDir = (dir) => {
-  const lastSlash = dir.lastIndexOf('/');
-  return dir.slice(lastSlash + 1);
-};
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const generateHTMLPlugins = () =>
   glob.sync('./src/**/*.html').map(dir =>
     new HTMLWebpackPlugin({
-      filename: getNameFromDir(dir), // Output
+      filename: path.basename(dir), // Output
       template: dir, // Input
     }));
 
@@ -36,7 +32,12 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        loader: ExtractTextPlugin.extract(['css-loader', 'postcss-loader', 'sass-loader']),
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          'css-loader', 'postcss-loader', 'sass-loader',
+        ],
       },
       {
         test: /\.html$/,
@@ -45,9 +46,11 @@ module.exports = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin({
-      filename: 'style.bundle.css',
-      allChunks: true,
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
     }),
     new CopyWebpackPlugin([{
       from: './src/static/',

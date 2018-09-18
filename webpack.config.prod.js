@@ -1,16 +1,18 @@
-const webpack = require('webpack');
+const cssnano = require('cssnano');
 const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const cssnano = require('cssnano');
+
+const common = require('./webpack.config.common.js');
 
 module.exports = merge(common, {
+  mode: 'production',
+  optimization: {
+    minimize: true,
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-    }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: cssnano,
@@ -19,4 +21,3 @@ module.exports = merge(common, {
     }),
   ],
 });
-
