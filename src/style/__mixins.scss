@@ -1,0 +1,14 @@
+@mixin media-query($screen) {
+  @media only screen and (min-width: $screen) {
+    @content;
+  }
+}
+
+@mixin page-width {
+  max-width: 118rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  @include media-query($sm-up) {
+    padding: 0 4.8rem;
+  }
+}
