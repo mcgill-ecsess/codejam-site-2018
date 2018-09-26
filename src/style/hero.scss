@@ -28,3 +28,13 @@
     font-size: 2rem;
   }
 }
+
+.loader {
+  position: absolute;
+  top: -20rem;
+  left: -30rem;
+  z-index: -1;
+  @include media-query($sm-up) {
+    left: -10rem;
+  }
+}
