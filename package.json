@@ -52,5 +52,8 @@
     "> 1%",
     "last 2 versions"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "smoothscroll": "^0.4.0"
+  }
 }

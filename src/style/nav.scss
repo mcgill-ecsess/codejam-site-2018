@@ -1,0 +1,16 @@
+.nav {
+}
+
+.nav__item-wrapper {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav__item {
+  font-size: 2.4rem;
+  @include media-query($sm-up) {
+    font-size: inherit;
+    display: inline;
+    padding-right: 2rem;
+  }
+}

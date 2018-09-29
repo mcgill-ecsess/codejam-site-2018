@@ -1,11 +1,17 @@
 .hero {
-  @include page-width;
-
+  padding: 0 1.6rem;
   height: 100vh;
   min-height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include page-width;
+
+  @include media-query($sm-up) {
+    padding: 0 7.2rem;
+    max-width: 118rem;
+  }
 }
 
 .hero__title {

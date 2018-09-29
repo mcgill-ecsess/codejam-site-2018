@@ -5,12 +5,16 @@ html {
 @import "__variables";
 @import "__mixins";
 @import "hero";
+@import "nav";
+@import "body";
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
 body {
   font-family: "Source Code Pro", Courier, monospace;
   background-color: $navy;
   color: $white;
+  font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 h1,
@@ -31,4 +35,12 @@ h6 {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+}
+
+a {
+  color: $blue;
+  transition: 0.15s color ease-in-out;
+  &:hover {
+    color: $yellow;
+  }
 }
