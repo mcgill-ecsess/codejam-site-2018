@@ -14,8 +14,32 @@
   }
 }
 
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include media-query($sm-up) {
+    flex-direction: row;
+  }
+}
+
+.hero__logo {
+  @include media-query($sm-up) {
+    margin-right: 2rem;
+  }
+}
+
+.hero__text-wrapper {
+  text-align: center;
+
+  @include media-query($sm-up) {
+    text-align: left;
+  }
+}
+
 .hero__title {
   font-size: 3.6rem;
+  margin-top: 0;
   margin-bottom: 0.4rem;
 
   @include media-query($sm-up) {

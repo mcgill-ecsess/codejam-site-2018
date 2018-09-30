@@ -13,16 +13,23 @@
 <body>
   <div class="loader"></div>
   <section class="hero">
-    <h1 class="hero__title">code.jam(<em>2018</em>)</h1>
-    <span class="hero__subtitle">November 16-18, 2018 @ McGill University</span>
-    <nav class="nav">
-      <ul class="nav__item-wrapper">
-        <li class="nav__item"><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
+    <div class="hero__wrapper">
+      <img class="hero__logo" src="static/jar.svg"/>
+      <div class="hero__text-wrapper">
+        <h1 class="hero__title">code.jam(<em>2018</em>)</h1>
+        <span class="hero__subtitle">November 16-18, 2018 @ McGill University</span>
+        <nav class="nav">
+          <ul class="nav__item-wrapper">
+              <li class="nav__item"><a href="#about">About</a></li>
+            <li class="nav__item"><a href="#faq">FAQ</a></li>
+            <li class="nav__item"><a href="#sponsors">Sponsors</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </section>
   <main>
-    <section class="section">
+    <section class="section" id="about">
       <h2 class="section__header">What is CodeJam?</h2>
         <div class="about">
             <p class="about__content">
@@ -169,11 +176,8 @@
         </p>
       <p></p>
     </section>
-    <section class="section">
+    <section class="section" id="sponsors">
       <h2 class="section__header">Our sponsors</h2>
-      <ul class="sponsor-list">
-
-      </ul>
     </section>
   </main>
   <footer>
