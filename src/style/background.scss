@@ -2,26 +2,26 @@
   opacity: 0;
   z-index: -999;
   position: absolute;
-  width: 240px;
+  width: 160px;
 
-  @include media-query($md-up) {
+  @include media-query($lg-up) {
     opacity: 1;
   }
 }
 
 .background__dots--left {
-  left: 16rem;
+  left: 8rem;
 
   &.background__dots--front {
-    left: 20rem;
+    left: 12rem;
   }
 }
 
 .background__dots--right {
-  right: 16rem;
+  right: 8rem;
 
   &.background__dots--front {
-    right: 20rem;
+    right: 12rem;
   }
 }
 
