@@ -1,2 +1,4 @@
-require('./webgl/index');
 require('smoothscroll');
+
+require('./scroll');
+require('./webgl/index');
