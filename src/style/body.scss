@@ -114,3 +114,52 @@
   max-width: 70rem;
   margin: 4rem auto;
 }
+
+.sponsor-list__tier {
+  @include inline-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sponsor-list__logo {
+  display: inline-block;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 5rem;
+  }
+}
+
+.sponsor-list__logo--partner {
+  width: 50%;
+}
+
+.sponsor-list__logo--diamond {
+  width: 35%;
+}
+
+.sponsor-list__logo--gold {
+  width: 25%;
+}
+
+.sponsor-list__logo--silver {
+  width: 15%;
+}
+
+.sponsor-list__logo--wrnch {
+  padding-bottom: 2rem;
+}
+
+.sponsor-list__logo--fdm {
+  padding-bottom: 2rem;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 20%;
+}
+
+.sponsor-list__logo--gurus {
+  padding-bottom: 1rem;
+}
