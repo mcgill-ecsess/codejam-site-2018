@@ -1,0 +1,19 @@
+.footer {
+  border-top: 1px solid $blue;
+  padding: 2rem;
+}
+
+.social-list {
+  @include inline-list;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__link {
+  padding: 1rem;
+}
+
+.footer__text {
+  text-align: center;
+}

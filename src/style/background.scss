@@ -1,0 +1,33 @@
+.background__dots {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  width: 240px;
+
+  @include media-query($md-up) {
+    opacity: 1;
+  }
+}
+
+.background__dots--left {
+  left: 16rem;
+
+  &.background__dots--front {
+    left: 20rem;
+  }
+}
+
+.background__dots--right {
+  right: 16rem;
+
+  &.background__dots--front {
+    right: 20rem;
+  }
+}
+
+.background__pr {
+  position: absolute;
+  z-index: 999;
+  opacity: 0.02;
+  width: 60rem;
+}

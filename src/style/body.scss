@@ -1,0 +1,170 @@
+.main {
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.section {
+  @include page-width;
+  margin-bottom: 10rem;
+}
+.section__header {
+  font-size: 3.2rem;
+  display: inline-block;
+  position: relative;
+  &:before {
+    content: '';
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: $blue;
+    position: absolute;
+    top: -0.6rem;
+    left: -1.2rem;
+    z-index: -1;
+  }
+}
+
+.about-list {
+  @include inline-list;
+  @include numbered(about);
+  @include media-query($sm-up) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.about-list__item {
+  padding: 2rem;
+  margin: 6rem auto;
+  max-width: 30rem;
+
+  @include bordered;
+  @include media-query($sm-up) {
+    width: 30%;
+    margin: 5%;
+  }
+}
+
+.about-list__icon {
+  color: $white;
+  width: 3.2rem;
+  text-align: center;
+}
+
+.about-list__content {
+  font-size: 1.2rem;
+}
+
+.theme {
+  @include media-query($md-up) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.theme__text {
+  max-width: 50rem;
+  margin: auto;
+  @include media-query($sm-up) {
+    margin: initial;
+  }
+}
+
+.theme__logo-wrapper {
+  @include bordered;
+  width: 24rem;
+  margin: 4rem auto;
+
+  @include media-query($md-up) {
+    margin: initial;
+  }
+}
+
+.theme__logo {
+  width: 20rem;
+  padding: 2rem;
+}
+
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include numbered(faq);
+  @include inline-list;
+}
+
+.faq__question-wrapper {
+  @include bordered;
+
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem;
+
+  @include media-query($sm-up) {
+    width: 30%;
+    padding: 1.6rem;
+  }
+}
+
+.faq__question {
+  font-size: 1.6rem;
+}
+
+.faq__answer {
+  font-size: 1.4rem;
+}
+
+.other-questions {
+  max-width: 70rem;
+  margin: 4rem auto;
+}
+
+.sponsor-list__tier {
+  @include inline-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sponsor-list__logo {
+  display: inline-block;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 5rem;
+  }
+}
+
+.sponsor-list__logo--partner {
+  width: 50%;
+}
+
+.sponsor-list__logo--diamond {
+  width: 35%;
+}
+
+.sponsor-list__logo--gold {
+  width: 25%;
+}
+
+.sponsor-list__logo--silver {
+  width: 15%;
+}
+
+.sponsor-list__logo--wrnch {
+  padding-bottom: 2rem;
+}
+
+.sponsor-list__logo--fdm {
+  padding-bottom: 2rem;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 20%;
+}
+
+.sponsor-list__logo--gurus {
+  padding-bottom: 1rem;
+}

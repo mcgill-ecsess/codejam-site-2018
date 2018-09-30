@@ -1,16 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,900|Source+Code+Pro" rel="stylesheet">
-  <title>code.jam(2018)</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <title>code.jam(2018) - PATTERN RECOGNITION</title>
 </head>
 
 <body>
-    <div>
-      <h1>code.jam(<em>2018</em>)</h1>
-      <p>coming soon.</p>
+  <div class="loader"></div>
+  <section class="hero">
+    <div class="hero__wrapper">
+      <img class="hero__logo" src="static/jar.svg" />
+      <div class="hero__text-wrapper">
+        <h1 class="hero__title">code.jam(<em>2018</em>)</h1>
+        <span class="hero__subtitle">November 16-18, 2018 @ McGill University</span>
+        <nav class="nav">
+          <ul class="nav__item-wrapper">
+            <li class="nav__item"><a href="#about">About</a></li>
+            <li class="nav__item"><a href="#faq">FAQ</a></li>
+            <li class="nav__item"><a href="#sponsors">Sponsors</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+  </section>
+  <main class="main">
+    <img class="background__dots background__dots--left js-background" src="static/dots/dots-blue.svg"/>
+    <img class="background__dots background__dots--left background__dots--front js-background-front" src="static/dots/dots-red.svg"/>
+    <section class="section" id="about">
+      <h2 class="section__header">What is CodeJam?</h2>
+      <div class="about">
+        <p class="about__content">
+          CodeJam is the yearly hackathon run by the McGill Electrical, Computer, and
+          Software Student Society in our very own Trottier Engineering Building. We
+          provide an engaging environment for students to learn and have fun over a
+          weekend of coding!
+        </p>
+        <ul class="about-list">
+          <li class="about-list__item">
+            <h3 class="about-list__header">
+              <span class="about-list__icon fas fa-laptop-code"></span>
+              Code
+            </h3>
+            <p class="about-list__content">
+              Build an awesome project with your team over the course of the weekend (and get feedback
+              and mentoring throughout).
+            </p>
+          </li>
+          <li class="about-list__item">
+            <h3 class="about-list__header">
+              <span class="about-list__icon fas fa-users"></span>
+              Network
+            </h3>
+            <p class="about-list__content">
+              Meet like-minded hackers and connect with companies looking to hire their next
+              batch of talented developers.
+            </p>
+          </li>
+          <li class="about-list__item">
+            <h3 class="about-list__header">
+              <span class="about-list__icon fas fa-utensils"></span>
+              Food
+            </h3>
+            <p class="about-list__content">
+              Great meals and snacks will be provided all weekend. This goes from Friday's
+              dinner all the way to Sunday's lunch!
+            </p>
+          </li>
+          <li class="about-list__item">
+            <h3 class="about-list__header">
+              <span class="about-list__icon fas fa-award"></span>
+              Prizes
+            </h3>
+            <p class="about-list__content">
+              $4000 in cash prizes are up for grabs! More details about the prize breakdown
+              to be determined.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      </div>
+    </section>
+    <img class="background__dots background__dots--right js-background" src="static/dots/dots-red.svg"/>
+    <img class="background__dots background__dots--right background__dots--front js-background-front" src="static/dots/dots-yellow.svg"/>
+    <img class="background__pr js-background-pr" src="static/pattern-recognition.svg" />
+    <section class="section">
+      <h2 class="section__header">This year's theme</h2>
+      <div class="theme">
+        <div class="theme__logo-wrapper">
+          <img class="theme__logo" src="static/pattern-recognition.svg" />
+        </div>
+        <p class="theme__text">
+          We’re excited to announce PATTERN RECOGNITION as the theme for code.jam(2018). With the explosive
+          growth of machine learning and the rise of Montreal as an AI hub, we saw fit to organize a hackathon
+          to explore the practical applications of pattern recognition.
+          <br /><br />
+          As part of our competition format, we'll be dividing this theme into 3 categories, which will be
+          revealed on the day of the competition!
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section__header" id="faq">Questions</h2>
+      <ul class="faq">
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Where will CodeJam be held?</h3>
+          <p class="faq__answer">
+            CodeJam will be held at the Trottier Engineering Building, at
+            <a href="http://maps.mcgill.ca/?campus=DWT&txt=EN&id=Trottier">3630 Rue University, Montreal, QC, H3A 0C6</a>.
+            The building is wheelchair-accessible, and has elevators and accessible bathrooms.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Will there be parking?</h3>
+          <p class="faq__answer">
+            There is no dedicated parking for the event, but there is free street parking on
+            weekends in the surrounding neighbourhood around Milton and Parc.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">How many people can be in a team?</h3>
+          <p class="faq__answer">
+            Each team can have between 1 and 4 members. If you don't have a team but want to be
+            part of one, you can still sign up as a free agent, and we'll make accommodations at the start of the event
+            to
+            help you find a group to work with.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Who is eligible to participate?</h3>
+          <p class="faq__answer">
+            CodeJam requires at least one member per team to be in ECSE or CS at McGill.
+            (Required to get access to the building over the weekend.)
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">I haven't had much experience coding. Should I still come?</h3>
+          <p class="faq__answer">
+            Yes! CodeJam is open to hackers of all levels of experience. Just bring an open mind and
+            get ready to learn and code!
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">What do I need to bring for the weekend?</h3>
+          <p class="faq__answer">
+            Your student ID, laptop, and charger should be enough. Food and drinks are on us, but
+            feel free to bring your own if you're still feeling peckish!
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">How do I register?</h3>
+          <p class="faq__answer">
+            <strong>Registration details will be coming soon!</strong> Tickets will be sold for
+            a small monetary value, and will include entrance to participate in CodeJam, a t-shirt,
+            and food for the weekend.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Will there be accommodations for dietary restrictions?</h3>
+          <p class="faq__answer">
+            Yes. We will provide nut-free, vegetarian, and vegan food options for each meal. If
+            you have special dietary needs, please specify once you register.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Can I iterate on a past project as my submission?</h3>
+          <p class="faq__answer">
+            No. Participants should be creating something from scratch once the hacking
+            begins so we can have an even playing field for everyone!
+          </p>
+        </li>
+      </ul>
+      <p class="other-questions">
+        Have any questions not listed here? Say hi at <a href="mailto:codejam@mcgilleus.ca">codejam@mcgilleus.ca</a>
+        or leave us a message at our <a href="https://www.facebook.com/mcgillcodejam/">Facebook page</a>. We'll try
+        to answer all queries as soon as possible! 🚀
+      </p>
+    </section>
+    <section class="section" id="sponsors">
+      <h2 class="section__header">Our sponsors</h2>
+      <div class="sponsor-list">
+        <ul class="sponsor-list__tier">
+          <li class="sponsor-list__logo sponsor-list__logo--partner">
+            <img src="static/sponsors/intact.svg"/>
+          </li>
+        </ul>
+        <ul class="sponsor-list__tier">
+            <li class="sponsor-list__logo sponsor-list__logo--diamond">
+              <img src="static/sponsors/morgan-stanley.svg"/>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--diamond sponsor-list__logo--wrnch">
+              <img src="static/sponsors/wrnch.svg"/>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--diamond">
+              <img src="static/sponsors/aws.svg"/>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--diamond">
+              <img src="static/sponsors/opal-rt.jpg"/>
+            </li>
+        </ul>
+        <ul class="sponsor-list__tier">
+          <li class="sponsor-list__logo sponsor-list__logo--gold">
+            <img src="static/sponsors/tracktik.png"/>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--gold">
+            <img src="static/sponsors/genetec.svg"/>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--gold sponsor-list__logo--fdm">
+            <img src="static/sponsors/fdm.svg"/>
+          </li>
+        </ul>
+        <ul class="sponsor-list__tier">
+            <li class="sponsor-list__logo sponsor-list__logo--silver">
+              <img src="static/sponsors/square-enix.svg"/>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--silver sponsor-list__logo--gurus">
+              <img src="static/sponsors/gurus.svg"/>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--silver">
+              <img src="static/sponsors/tru-simulation.png"/>
+            </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <ul class="social-list">
+      <li class="social-list__link"><a href="https://www.facebook.com/mcgillcodejam"><span class="fab fa-facebook fa-2x"></span></a></li>
+      <li class="social-list__link"><a href="mailto:sponsor.codejam@mcgilleus.ca"><span class="fas fa-envelope fa-2x"></span></a></li>
+    </ul>
+    <p class="footer__text">Made with ⚡️ by McGill ECSESS</p>
+  </footer>
 </body>
