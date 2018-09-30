@@ -97,8 +97,7 @@
   padding: 2rem;
 
   @include media-query($sm-up) {
-    width: 40%;
-    margin: 2.5%;
+    width: 30%;
     padding: 1.6rem;
   }
 }
