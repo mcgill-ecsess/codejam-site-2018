@@ -54,6 +54,7 @@
   ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.3.1",
+    "rellax": "^1.7.0",
     "scrollreveal": "^4.0.4",
     "smoothscroll": "^0.4.0"
   }

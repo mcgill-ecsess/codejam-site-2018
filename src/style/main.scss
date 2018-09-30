@@ -4,9 +4,11 @@ html {
 
 @import "__variables";
 @import "__mixins";
+@import "background";
 @import "hero";
 @import "nav";
 @import "body";
+@import "footer";
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
 body {

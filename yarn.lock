@@ -6979,6 +6979,11 @@ relateurl@0.2.x:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
+rellax@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/rellax/-/rellax-1.7.0.tgz#8fe8192c2da3a155815170a349af66f4b58205f0"
+  integrity sha512-WAwZ5o+vvTtONMIxa/8hUl2s122CthTowpsQ7QRx0JbMl4lCpnggYr+TwX+KT0SxkAn+3lJKrLcJ+jvIHw/m2g==
+
 remark-parse@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-5.0.0.tgz#4c077f9e499044d1d5c13f80d7a98cf7b9285d95"

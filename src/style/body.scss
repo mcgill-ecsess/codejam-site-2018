@@ -1,3 +1,8 @@
+.main {
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
 .section {
   @include page-width;
   margin-bottom: 10rem;
