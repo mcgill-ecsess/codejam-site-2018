@@ -19,8 +19,7 @@
 }
 
 .about-list {
-  padding-left: 0;
-  list-style: none;
+  @include inline-list;
   @include numbered(about);
   @include media-query($sm-up) {
     display: flex;
@@ -87,6 +86,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   @include numbered(faq);
+  @include inline-list;
 }
 
 .faq__question-wrapper {
