@@ -39,3 +39,17 @@
   padding-left: 0;
   list-style: none;
 }
+
+@mixin button {
+  background-color: $red;
+  color: $white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s all ease-in-out;
+  padding: 20px;
+  display: inline-block;
+  &:hover {
+    background-color: $blue;
+  }
+}

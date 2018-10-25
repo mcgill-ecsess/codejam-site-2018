@@ -7,7 +7,6 @@
 }
 
 .nav__item {
-  font-size: 2.4rem;
   @include media-query($sm-up) {
     font-size: inherit;
     display: inline;
