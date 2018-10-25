@@ -96,6 +96,15 @@
   padding: 2rem;
 }
 
+.registration__button-wrapper {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.registration__button {
+  @include button;
+}
+
 .faq {
   display: flex;
   flex-wrap: wrap;
